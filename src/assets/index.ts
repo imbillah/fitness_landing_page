@@ -3,6 +3,7 @@ import HomePgaeGraphic from "./HomePageGraphic.png";
 import SponsorRedBull from "./SponsorRedBull.png";
 import SponsorForbes from "./SponsorForbes.png";
 import SponsorFortune from "./SponsorFortune.png";
+import PeletonLogo from "./PeletonLogo.png";
 import EvolveText from "./EvolveText.png";
 import Circles from "./Circles.png";
 import Arrow from "./Arrow.png";
@@ -23,6 +24,7 @@ export {
   SponsorForbes,
   SponsorRedBull,
   SponsorFortune,
+  PeletonLogo,
   EvolveText,
   Circles,
   Arrow,

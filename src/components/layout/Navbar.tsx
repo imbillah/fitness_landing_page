@@ -89,7 +89,7 @@ const Navbar: React.FC<NavbarProps> = ({ selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Our Plans"
+              page="Our Classes"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />

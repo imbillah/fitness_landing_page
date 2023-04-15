@@ -5,6 +5,7 @@ import {
   SponsorForbes,
   SponsorRedBull,
   SponsorFortune,
+  PeletonLogo,
 } from "@/assets";
 import { SelectedPage } from "@/utils/types";
 import ActionButton from "./layout/ActionButton";
@@ -63,7 +64,12 @@ const HomePage: React.FC<HomePageProps> = ({ setSelectedPage }) => {
         <div className="flex items-center justify-between w-5/6 m-auto py-5">
           <img src={SponsorRedBull} alt="sponsor_redbull" />
           <img src={SponsorForbes} alt="SponsorForbes" />
-          <img src={SponsorFortune} alt="sSponsorFortune" />
+          <img src={SponsorFortune} alt="SponsorFortune" />
+          <img
+            src={PeletonLogo}
+            alt="PeletonLogo"
+            className="w-[113px] h-[26px]"
+          />
         </div>
       </div>
     </section>
