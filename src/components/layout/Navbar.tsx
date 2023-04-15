@@ -8,14 +8,23 @@ import ActionButton from "./ActionButton";
 
 interface NavbarProps {
   selectedPage: SelectedPage;
+  isTopOfPage: boolean;
   setSelectedPage: (value: SelectedPage) => void;
 }
-const Navbar: React.FC<NavbarProps> = ({ selectedPage, setSelectedPage }) => {
+
+const Navbar: React.FC<NavbarProps> = ({
+  selectedPage,
+  setSelectedPage,
+  isTopOfPage,
+}) => {
   const [isMobileMenu, setIsMobileMenu] = useState<boolean>(false);
   const flexCustom: string = "flex items-center justify-between";
+  const navbarBackground = isTopOfPage ? "" : "bg-red-100 drop-shadow";
   return (
     <nav>
-      <div className={`${flexCustom} fixed top-0 z-40 w-full py-5 `}>
+      <div
+        className={`${flexCustom} ${navbarBackground} fixed top-0 z-40 w-full py-5 `}
+      >
         {/* container */}
         <div className={`${flexCustom} mx-auto w-5/6`}>
           <img src={Logo} alt="Logo" />
@@ -34,17 +43,12 @@ const Navbar: React.FC<NavbarProps> = ({ selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Our Plans"
+              page="Our Classes"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
               page="Contact Us"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="About Us"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />

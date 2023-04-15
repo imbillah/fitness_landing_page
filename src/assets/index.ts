@@ -11,6 +11,7 @@ import Sparkles from "./Sparkles.png";
 import ContactUsPageGraphic from "./ContactUsPageGraphic.png";
 import BenefitsPageGraphic from "./BenefitsPageGraphic.png";
 import AbstractWaves from "./AbstractWaves.png";
+import Logo from "./Logo.png";
 import image1 from "./image1.png";
 import image2 from "./image2.png";
 import image3 from "./image3.png";
@@ -32,6 +33,7 @@ export {
   ContactUsPageGraphic,
   AbstractWaves,
   BenefitsPageGraphic,
+  Logo,
   image1,
   image2,
   image3,
